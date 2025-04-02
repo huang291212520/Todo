@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        // 目标语言的版本
+        "target": "esnext",
+        "lib": ["ES2021", "DOM"],
+        // 生成代码的模板标准
+        "module": "esnext",
+        // 模块解析策略，ts默认用node的解析策略，即相对的方式导入
+        "moduleResolution": "node",
+        // 允许export=导出，由import from 导入
+        "esModuleInterop": true,
+        // 允许编译器编译JS，JSX文件
+        "allowJs": true,
+        // 生成目标文件的sourceMap文件
+        "sourceMap": true,
+        // 开启所有严格的类型检查
+        "strict": false,
+        // 不输出文件,即编译后不会生成任何js文件
+        "noEmit": false,
+        // 检查只声明、未使用的局部变量(只提示不报错)
+        "noUnusedLocals": true,
+        // 跳过所有的类型检查 .d.ts 文件
+        "skipLibCheck": false,
+        // 不允许隐式的any类型
+        "noImplicitAny": false,
+        // 允许导入json文件
+        "resolveJsonModule": true,
+        // 当模块没有默认导出时，允许“从y导入x”。
+        "allowSyntheticDefaultImports": true
+    }
+}

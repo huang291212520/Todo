@@ -1,0 +1,54 @@
+{
+    "name": "TODO",
+    "version": "1.0.0",
+    "description": "TODO桌面端应用-基于vue3",
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "electron:serve": "electron .",
+        "electron:build": "electron-builder"
+    },
+    "main": "main.js",
+    "author": "huang",
+    "license": "MIT",
+    "devDependencies": {
+        "@vue/cli-service": "^5.0.8",
+        "electron": "^31.3.1",
+        "electron-builder": "^24.13.3",
+        "prettier": "2.8.8"
+    },
+    "dependencies": {
+        "@element-plus/icons-vue": "^2.3.1",
+        "@vue/cli-plugin-typescript": "^5.0.8",
+        "electron-store": "^10.0.0",
+        "element-plus": "^2.7.8",
+        "less": "^4.2.0",
+        "less-loader": "^12.2.0",
+        "sass": "^1.63.6",
+        "sass-loader": "^16.0.1",
+        "ts-loader": "^9.5.1",
+        "typescript": "^5.5.4",
+        "vue": "^3.4.34",
+        "vue-loader": "^17.4.2"
+    },
+    "build": {
+        "appId": "com.example.todo",
+        "productName": "TODO",
+        "files": [
+            "dist/**/*",
+            "main.js",
+            "index.html"
+        ],
+        "directories": {
+            "output": "build"
+        },
+        "win": {
+            "target": "nsis",
+            "icon": "app.ico"
+        },
+        "extraResources": {
+            "from": "./app.ico",
+            "to": "app.ico"
+        }
+    }
+}
